@@ -21,7 +21,7 @@
         body { font-family: 'Montserrat', sans-serif; overflow: hidden; scroll-behavior: smooth; }
         .font-serif { font-family: 'Playfair Display', serif; }
         .font-cursive { font-family: 'Dancing Script', cursive; }
-        #cover-section { background-image: url('img/gallery\ \ \(3\).JPEG'); }
+        #cover-section { background-image: url('img/bg\ cov.png'); }
         .swiper-slide-bg { width: 100%; height: 100%; background-size: cover; background-position: center; }
         .anim-hidden { visibility: hidden; }
         .text-shadow { text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); }
@@ -55,72 +55,140 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="swiper-slide-bg" 
-                    style="background-image: url('img/gallery\ \ \(1\).JPEG');">
+                    style="background-image: url('img/filow.jpg');">
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="swiper-slide-bg" 
-                    style="background-image: url('img/gallery\ \ \(2\).JPEG');">
+                    style="background-image: url('img/cincin\ 5.jpg');">
                 </div>
             </div>
             <div class="swiper-slide"><div class="swiper-slide-bg" 
-                        style="background-image: url('img/gallery\ \ \(3\).JPEG');">
+                        style="background-image: url('img/filow.jpg');">
                     </div>
                 </div>
             </div>
         </div>
         <div class="absolute inset-0 bg-black/50"></div></div>
 
+
     <main id="main-content">
-<section id="cover-section" 
-    class="fixed top-0 left-0 w-full h-screen bg-cover bg-center flex flex-col items-start justify-end z-50 text-white transition-transform duration-1000 ease-in-out">
-    
-    <div class="absolute inset-0 bg-black/60"></div>
-    
-    <div class="relative z-10 text-left p-8 mb-20">
-        <p id="wedding-of" 
-           class="text-base font-light tracking-widest anim-hidden">The wedding of</p>
-        
-        <h1 id="couple-name" 
-            class="text-3xl font-serif my-4 anim-hidden">Putra & Putri</h1>
-        
-        <!-- NAMA TAMU (di atas tombol) -->
-        <p id="guest-name-cover" class="mt-3 text-xs md:text-sm tracking-wide">
-            Kepada Yth: <span id="guest-name-cover-inline" class="font-semibold">Tamu Undangan</span>
-        </p>
+<section id="cover-section"  
+ class="fixed top-0 left-0 w-full h-screen flex flex-col items-center justify-between z-50 text-black transition-transform duration-1000 ease-in-out overflow-hidden"
+  style="
+    background-image: url('img/bg\ cov.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  ">
+  <!-- Bagian atas: judul -->
+  <div class="relative z-10 text-center pt-16">
+    <!-- Ornamen tambahan di atas tulisan -->
+    <img src="img/ornamen atas.png" 
+         alt="ornamen atas"
+         class="mx-auto mb-0 w-32 md:w-40">
 
-        <a href="#" id="open-invitation-btn" class="inline-block mt-12 group anim-hidden">
-            <span class="text-sm font-light tracking-widest">Buka undangan</span>
-            <div class="w-2/3 h-px bg-white mt-2 transition-transform duration-300 group-hover:scale-x-110"></div>
-        </a>
+
+    <p id="wedding-of" 
+       class="text-base font-light tracking-widest anim-hidden">
+       The wedding of
+    </p>
+    <h1 id="couple-name" 
+        class="text-6xl md:text-6xl font-italianno my-4 anim-hidden">
+        Irawan & Aida
+    </h1>
+  </div>
+
+  <!-- Frame foto -->
+  <div class="relative z-10 flex justify-center items-center -mt-20 md:-mt-32">
+    <div class="relative w-56 h-80 md:w-64 md:h-96 rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white/70 bg-white/10 backdrop-blur-sm">
+      <img src="img/G R O O M (1).png" alt="Foto Mempelai" class="w-full h-full object-cover">
     </div>
+
+    <!-- Ornamen kanan di luar frame -->
+ <!-- Ornamen kanan di luar frame -->
+    <img src="img/ornamen kanan.png" 
+         alt="ornamen kanan" 
+         class="absolute top-1/2 -translate-y-1/2 right-[-145px] md:right-[-90px] w-36 md:w-44">
+
+    <!-- Ornamen kiri di luar frame -->
+    <img src="img/ornamen kiri.png" 
+         alt="ornamen kiri" 
+         class="absolute top-1/2 -translate-y-1/2 left-[-145px] md:left-[-90px] w-36 md:w-4">
+  </div>
+
+ 
+  <!-- Bagian bawah -->
+  <div class="relative z-10 text-center pb-16 mb-20">
+    <p id="guest-name-cover" 
+       class="text-xs md:text-sm tracking-wide anim-hidden">
+       Kepada Yth: 
+       <span id="guest-name-cover-inline" class="font-semibold">Tamu Undangan</span>
+    </p>
+
+    <a href="#" id="open-invitation-btn" class="inline-block mt-10 group anim-hidden">
+      <span class="text-sm text-black tracking-widest">Buka Undangan</span>
+      <div class="w-2/3 h-px bg-black mx-auto mt-2 transition-transform duration-300 group-hover:scale-x-110"></div>
+    </a>
+  </div>
 </section>
 
-  <section id="mempelai" 
-    class="relative min-h-screen flex flex-col justify-center items-center text-white text-center p-8 bg-black/20">
-    
-    <div class="w-full max-w-2xl mx-auto">
-        <!-- Nama Mempelai -->
-        <h2 class="text-6xl md:text-8xl" data-aos="zoom-in-down"
-            style="font-family: 'Italianno', cursive;">
-            Putra & Putri
-        </h2>
 
-        <!-- Tanggal -->
-        <p class="mt-4 text-lg md:text-xl tracking-wide" data-aos="zoom-in-down">
-            28 Desember 2025
-        </p>
 
-        <!-- Countdown -->
-        <div id="countdown" class="flex justify-around text-center mb-8 animate-on-scroll" 
-					style="--delay: 400ms;"><div><span id="days" class="text-3xl font-bold">00</span>
-					<p class="text-xs">Days</p></div><div><span id="hours" class="text-3xl font-bold">00</span>
-					<p class="text-xs">Hours</p></div><div><span id="minutes" class="text-3xl font-bold">00</span>
-					<p class="text-xs">Minutes</p></div><div><span id="seconds" class="text-3xl font-bold">00</span>
-					<p class="text-xs">Seconds</p></div></div><div class="flex flex-col gap-6 text-center">
+ <section id="mempelai" 
+  class="relative min-h-screen flex flex-col justify-end items-center text-black text-center p-8 bg-[#FAF0E6] overflow-hidden ">
+   <div class="w-full max-w-2xl mx-auto mb-6">
+    <h2 class="text-6xl md:text-8xl" data-aos="zoom-in-down"
+      style="font-family: 'Italianno', cursive;">
+      Irawan & Aida
+    </h2>
+
+    <p class="mt-2 text-lg md:text-xl tracking-wide" data-aos="zoom-in-down">
+      28 Desember 2025
+    </p>
+  </div>
+  <!-- FRAME FOTO DENGAN ORNAMEN -->
+  <div class="relative w-full max-w-md mx-auto mb-10" data-aos="zoom-in">
+    <!-- Frame foto -->
+    <div class="rounded-t-3xl overflow-hidden border-3 border-white shadow-[0_10px_25px_rgba(0,0,0,0.9)] relative">
+      <img src="img/G R O O M (1).png" alt="Foto Mempelai" class="w-full object-cover">
+
+      <!-- Ornamen kanan atas -->
+      <img src="ornamen-kanan.png" alt="Ornamen kanan atas" 
+           class="absolute top-0 right-0 w-24 md:w-32 opacity-90 pointer-events-none">
+
+      <!-- Ornamen kiri bawah -->
+      <img src="ornamen-kiri.png" alt="Ornamen kiri bawah" 
+           class="absolute bottom-0 left-0 w-24 md:w-32 opacity-90 pointer-events-none">
     </div>
+  </div>
+
+  <!-- KONTEN -->
+  <div class="w-full max-w-2xl mx-auto">
+    
+
+    <div id="countdown" class="flex justify-around text-center mb-8 animate-on-scroll" style="--delay: 400ms;">
+      <div>
+        <span id="days" class="text-3xl font-bold">00</span>
+        <p class="text-xs">Days</p>
+      </div>
+      <div>
+        <span id="hours" class="text-3xl font-bold">00</span>
+        <p class="text-xs">Hours</p>
+      </div>
+      <div>
+        <span id="minutes" class="text-3xl font-bold">00</span>
+        <p class="text-xs">Minutes</p>
+      </div>
+      <div>
+        <span id="seconds" class="text-3xl font-bold">00</span>
+        <p class="text-xs">Seconds</p>
+      </div>
+    </div>
+  </div>
 </section>
-<section class="bg-gray-200 px-6 py-12 text-center rounded-xl shadow-md" style="background-image: url('img/Desain tanpa judul (3) (1).png')">
+
+<section class=" px-6 py-12 text-center shadow-md bg-[#FAF0E6]" >
   <!-- Ucapan Salam -->
   <p class="text-lg md:text-xl italic text-gray-700" data-aos="fade-up">
     بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم
@@ -142,314 +210,376 @@
 
         
            <!-- SECTION 3: PROFIL MEMPELAI -->
-<section id="section-3" class="w-full px-4 py-16 bg-black/40">
+<section id="section-3" class="w-full px-4 py-16 bg-[#FAF0E6] overflow-x-hidden">
+  <div class="max-w-3xl mx-auto text-center" data-aos="fade-up">
 
-  <div class="max-w-md mx-auto text-center" data-aos="fade-up">
-    <div class="w-full max-w-3xl mx-auto">
-        
-    
     <!-- Judul -->
-    <h2 class="text-white text-4xl font-semibold tracking-wide"data-aos="fade-right"
-     data-aos-anchor-placement="bottom-center">Kedua</h2>
-    <p class="font-italianno text-6xl text-white -mt-2"data-aos="fade-up"
-     data-aos-anchor-placement="bottom-center">Mempelai</p>
+    <h2 class="text-black text-4xl font-semibold tracking-wide" data-aos="fade-right">Kedua</h2>
+    <p class="font-italianno text-6xl text-black -mt-2" data-aos="fade-up">Mempelai</p>
 
     <!-- ================= Groom ================= -->
-    <div class="mt-10">
-      <!-- Foto -->
-      <div class="relative mx-auto w-full max-w-xs rounded-lg shadow-lg overflow-hidden" data-aos="fade-up-right" data-aos-duration="1000">
-        <img src="img/gallery  (5).JPEG" alt="Groom" class="w-full h-auto object-cover"/>
-      </div>
+    <div class="mt-12 flex flex-col md:flex-row items-center justify-center gap-6" data-aos="fade-up-right" data-aos-duration="1000">
       
-      <!-- Nama panggilan -->
-      <p class="mt-6 font-italianno text-3xl text-white"data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom">Irawan</p>
+      <!-- Foto + Label -->
+      <div class="relative flex w-full max-w-lg overflow-hidden rounded-xl shadow-[0_10px_25px_rgba(0,0,0,0.9)]">
+        <!-- Bagian Foto -->
+        <div class="w-3/4 bg-gray-400">
+          <img src="img/G R O O M (1).png" alt="Groom" class="w-full h-full object-cover">
+        </div>
 
-      <!-- Nama lengkap -->
-      <h3 class="mt-2 text-xl font-bold text-white"data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom">Irawan Putra pratama</h3>
-
-      <!-- Deskripsi -->
-      <p class="mt-3 text-white text-sm leading-relaxed" data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom">
-        Putra pertama dari pasangan <br>
-        Bapak ... &amp; Ibu ...
-      </p>
-      <p class="mt-1 text-white text-sm">Yogyakarta</p>
-
-      <!-- IG -->
-      <a href="https://instagram.com/arinvitation.my.id" target="_blank" rel="noopener"
-         class="mt-5 inline-flex items-center gap-2 rounded-full bg-[#c68b74] text-white px-4 py-2 text-sm font-medium hover:opacity-90 active:scale-95 transition">
-        <svg aria-hidden="true" viewBox="0 0 24 24" class="h-4 w-4"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zM17.75 6a1 1 0 1 1-1 1 1 0 0 1 1-1z"/></svg>
-        <span>@username</span>
-      </a>
+        <!-- Sisi Label -->
+        <div class="w-1/4 bg-black flex items-center justify-center">
+          <p class="text-white text-2xl font-semibold tracking-widest [writing-mode:vertical-rl] rotate-180">
+            GROOM
+          </p>
+        </div>
+      </div>
     </div>
 
-    
-    <!-- ================= Bride ================= -->
-    <div class="mt-8">
-      <!-- Foto -->
-      <div class="relative mx-auto w-full max-w-xs rounded-lg shadow-lg overflow-hidden"data-aos="zoom-out-right" data-aos-duration="1000">
-        <img src="img/gallery  (5).JPEG" alt="Bride" class="w-full h-auto object-cover"/>
-      </div>
-
-      <!-- Nama panggilan -->
-      <p class="mt-6 font-italianno text-4xl text-white"data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom">Aida</p>
-
-      <!-- Nama lengkap -->
-      <h3 class="mt-2 text-xl font-bold text-white"data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom">Aida Putri</h3>
-
-      <!-- Deskripsi -->
-      <p class="mt-3 text-white text-sm leading-relaxed"data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom">
-        Putri dari pasangan <br>
-        Bapak ... &amp; Ibu ...
+    <!-- Nama & Deskripsi Groom -->
+    <div class="mt-6">
+      <p class="font-italianno text-3xl text-black">Irawan</p>
+      <h3 class="mt-2 text-xl font-bold text-black">Irawan Putra Pratama</h3>
+      <p class="mt-3 text-black text-sm leading-relaxed">
+        Putra pertama dari pasangan <br>Bapak ... &amp; Ibu ...
       </p>
-      <p class="mt-1 text-white text-sm">Yogyakarta</p>
+      <p class="mt-1 text-black text-sm">Yogyakarta</p>
+    </div>
 
-      <!-- IG -->
-      <a href="https://instagram.com/arinvitation.my.id" target="_blank" rel="noopener"
-         class="mt-5 inline-flex items-center gap-2 rounded-full bg-[#c68b74] text-white px-4 py-2 text-sm font-medium hover:opacity-90 active:scale-95 transition">
-        <svg aria-hidden="true" viewBox="0 0 24 24" class="h-4 w-4"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zM17.75 6a1 1 0 1 1-1 1 1 0 0 1 1-1z"/></svg>
-        <span>@username</span>
-      </a>
+    <!-- ================= Bride ================= -->
+    <div class="mt-16 flex flex-col md:flex-row-reverse items-center justify-center gap-6" data-aos="fade-up-left" data-aos-duration="1000">
+      
+      <!-- Foto + Label -->
+      <div class="relative flex w-full max-w-lg overflow-hidden rounded-xl shadow-[0_10px_25px_rgba(0,0,0,0.9)]">
+        <!-- Sisi Label -->
+        <div class="w-1/4 bg-black flex items-center justify-center">
+          <p class="text-white text-2xl font-semibold tracking-widest [writing-mode:vertical-rl] rotate-180">
+            BRIDE
+          </p>
+        </div>
+
+        <!-- Bagian Foto -->
+        <div class="w-3/4 bg-gray-400">
+          <img src="img/G R O O M (1).png" alt="Bride" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+
+    <!-- Nama & Deskripsi Bride -->
+    <div class="mt-6">
+      <p class="font-italianno text-4xl text-black">Aida</p>
+      <h3 class="mt-2 text-xl font-bold text-black">Aida Putri</h3>
+      <p class="mt-3 text-black text-sm leading-relaxed">
+        Putri dari pasangan <br>Bapak ... &amp; Ibu ...
+      </p>
+      <p class="mt-1 text-black text-sm">Yogyakarta</p>
     </div>
   </div>
 </section>
 
-<section id="wedding-event" class="relative min-h-cover flex items-center justify-center p-4 bg-black/40">
+<section id="wedding-event" class="relative min-h-cover flex items-center justify-center p-4 bg-[#FAF0E6]">
   <div class="w-full max-w-md mx-auto">
-    
-      <h2 class="font-cursive text-4xl text-center mt-6 mb-6  text-stone-50 " data-aos="fade-up"
-     data-aos-duration="3000">Wedding Event</h2>
-        <p class="text-sm text-center text-white" data-aos="fade-up"
-     data-aos-duration="3000">Dengan segala kerendahan hati kami bermaksud inginmengundang Bapak/Ibu/saudara?i sekalian guna hadirdalam acara pernikahan kami yangkan dilaksanakan pada:</p>
+
+    <!-- Frame bergaya rounded top -->
+    <div class="relative overflow-hidden rounded-t-[18rem] mb-5 shadow-[0_10px_25px_rgba(0,0,0,0.3)] border border-white bg-white/70 backdrop-blur-md">
       
+     
+      <!-- Isi konten -->
+      <div class="relative z-10 p-8 md:p-10 text-black text-center">
+         <div class="flex justify-center items-center my-8">
+            <img src="img/event (1).png" alt="Ornamen bunga" class="w-24 h-auto object-contain pointer-events-none select-none" />
+          </div>
+        <h2 class="font-cursive text-4xl text-center mb-6" data-aos="fade-up" data-aos-duration="3000">
+          Wedding Event
+        </h2>
 
-      <!-- Akad Nikah -->
-      <div class="animate-on-scroll mt-8 mb-8" style="--delay: 200ms;" >
-        <h3 class="font-serif text-2xl text-center mb-2 text-white " data-aos="fade-up"
-     data-aos-duration="3000">Akad Nikah</h3>
-          <!-- Divider Ornamen -->
-        <div class="relative flex justify-center items-center my-12" data-aos="fade-up"
-     data-aos-duration="3000">
-          <img src="img/Desain tanpa judul (11) (1).png" alt="Ornamen bunga"
-               class="w-24 h-auto object-contain pointer-events-none select-none"/>
+        <p class="text-sm text-center" data-aos="fade-up" data-aos-duration="3000">
+          Dengan segala kerendahan hati kami bermaksud ingin mengundang Bapak/Ibu/Saudara/i sekalian guna hadir dalam acara pernikahan kami yang akan dilaksanakan pada:
+        </p>
+
+        <!-- Akad Nikah -->
+        <div class="mt-10 mb-10" data-aos="fade-up" data-aos-duration="3000">
+          <h3 class="font-serif text-2xl text-center mb-3">Akad Nikah</h3>
+         
+          <p class="text-sm">Minggu, 28 Desember 2025</p>
+          <p class="text-sm">Pukul 08.00 WIB</p>
+          <p class="mt-2 text-base">Rumah mempelai wanita<br>Jl. Solo Jogja km 32 Klaten</p>
+
+          <div class="flex justify-center">
+            <a href="https://maps.app.goo.gl/83Jq7nk83iTNihaB7" target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 mt-4 text-xs border border-black text-black rounded-full px-4 py-2 hover:bg-black hover:text-white transition">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+              </svg>
+              Open Location
+            </a>
+          </div>
         </div>
-        <p class="text-sm text-center text-white "data-aos="fade-up"
-     data-aos-duration="3000">Minggu, 28 Desember 2025</p>
-        <p class="text-sm text-center text-white "data-aos="fade-up"
-     data-aos-duration="3000">Pukul 08.00 WIB</p>
-        <p class="mt-2 text-base text-center text-white "data-aos="fade-up"
-     data-aos-duration="3000">Rumah mempelai wanita<br> Jl. Solo Jogaja km 32 Klaten</p>
-        <div class="flex justify-center">
-          <a href="https://maps.app.goo.gl/83Jq7nk83iTNihaB7" target="_blank" rel="noopener noreferrer"
-             class="inline-flex items-center gap-2 mt-4 text-xs border border-brown-400 text-white rounded-full px-4 py-2 hover:bg-brown-100 transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
-            </svg>
-            Open Location
-          </a>
+
+        <div class="flex justify-center items-center my-8">
+            <img src="img/event (2).png" alt="Ornamen bunga" class="w-24 h-auto object-contain pointer-events-none select-none" />
+          </div>
+
+        <!-- Resepsi -->
+        <div class="mt-8" data-aos="fade-up" data-aos-duration="3000">
+          <h3 class="font-serif text-2xl text-center mb-3">Resepsi</h3>
+          
+          <p class="text-sm">Minggu, 28 Desember 2025</p>
+          <p class="text-sm">Pukul 09.00 - 13.00 WIB</p>
+          <p class="mt-2 text-base">Rumah mempelai wanita<br>Jl. Solo Jogja km 32 Klaten</p>
+
+          <div class="flex justify-center">
+            <a href="https://maps.app.goo.gl/83Jq7nk83iTNihaB7" target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 mt-4 text-xs border border-black text-black rounded-full px-4 py-2 hover:bg-black hover:text-white transition">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+              </svg>
+              Open Location
+            </a>
+          </div>
         </div>
       </div>
-
-      <div class="w-2/3 h-px bg-gray-300 mx-auto mb-8"></div>
-
-      <!-- Resepsi -->
-      <div class="animate-on-scroll" style="--delay: 400ms;">
-        <h3 class="font-serif text-2xl text-center mb-2 text-white "data-aos="fade-up"
-     data-aos-duration="3000">Resepsi</h3>
-          <!-- Divider Ornamen -->
-        <div class="relative flex justify-center items-center my-12"data-aos="fade-up"
-     data-aos-duration="3000">
-          <img src="img/Desain tanpa judul (10) (1).png" alt="Ornamen bunga"
-               class="w-24 h-auto object-contain pointer-events-none select-none"/>
-        </div>
-        <p class="text-sm text-center text-white"data-aos="fade-up"
-     data-aos-duration="3000">Minggu, 28 Desember 2025</p>
-        <p class="text-sm text-center text-white"data-aos="fade-up"
-     data-aos-duration="3000">Pukul 09.00 - 13.00 WIB</p>
-        <p class="mt-2 text-base text-center text-white"data-aos="fade-up"
-     data-aos-duration="3000">Rumah Mempelai wanita<br> Jl. Solo Jogja km 32 Klaten</p>
-        <div class="flex justify-center">
-          <a href="https://maps.app.goo.gl/83Jq7nk83iTNihaB7" target="_blank" rel="noopener noreferrer"
-             class="inline-flex items-center gap-2 mt-4 text-xs border border-brown-400 text-white rounded-full px-4 py-2 hover:bg-brown-100 transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
-            </svg>
-            Open Location
-          </a>
-        </div>
-      </div>
-
     </div>
+
+  </div>
+</section>
+
+<!-- Section Video Autoplay -->
+<section class="w-full flex justify-center items-center bg-[#FAF0E6] py-2">
+  <div class="w-full max-w-2xl aspect-video">
+    <iframe
+      class="w-full h-full"
+      src="https://www.youtube.com/embed/_llaadwJZ8g?autoplay=1&mute=1&playsinline=1&rel=0&loop=1&playlist=_llaadwJZ8g"
+      title="YouTube video"
+      frameborder="0"
+      allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+      allowfullscreen
+    ></iframe>
   </div>
 </section>
 
         
-<section id="love-story" class="bg-gradient-to-b from-transparent to-black/50 relative min-h-screen flex items-center justify-center text-white py-20 px-4 bg-black/40">
-  <div class="w-full max-w-3xl mx-auto text-center">
+<section id="love-story" class="relative min-h-screen flex items-center justify-center text-white py-20 px-4 bg-[#FAF0E6]">
+  <div class="w-full max-w-4xl mx-auto text-center">
 
-    <h2 class="font-serif text-4xl md:text-5xl text-shadow" 
+    <h2 class="font-serif text-4xl md:text-5xl text-black" 
       data-aos="fade-up" data-aos-delay="200">
       Our Love Journey
     </h2>
 
     <div class="my-4" data-aos="zoom-in" data-aos-delay="300">
-      <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+      <svg class="mx-auto text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
       </svg>
     </div>
 
-    <!-- Items Love Story -->
-    <div class="mt-10 flex flex-col gap-10">
+    <!-- Frame besar -->
+    <div class="bg-cover bg-center border border-white/30 rounded-3xl shadow-2xl p-8 md:p-12 text-black backdrop-blur-md bg-white/70"      
+    data-aos="fade-up" data-aos-delay="400">
 
-      <!-- Awal Bertemu -->
-      <div class="bg-cover border border-white/30 rounded-2xl p-6 shadow-lg" style="background-image: url('img/Desain tanpa judul (3) (1).png');"
-        data-aos="fade-up" data-aos-delay="400">
-        <img src="img/our moment  (1).JPEG" alt="Awal Bertemu" class="w-full rounded-xl mb-4 shadow-md">
-        <h3 class="font-serif text-2xl text-amber-300 text-left">Awal Bertemu</h3>
-        <p class="mt-2 text-sm md:text-base font-light text-black text-left">
-          Kami pertama kali bertemu di sebuah acara kampus. 
-          Awalnya hanya sebatas teman, tapi ada sesuatu yang membuat kami terus terhubung.
-        </p>
+      <!-- Konten love story -->
+      <div class="space-y-10">
+
+        <!-- Awal Bertemu -->
+        <div class="animate-on-scroll">
+          <img src="img/our moment  (1).JPEG" alt="Awal Bertemu" class="w-full rounded-xl mb-4 shadow-md">
+          <h3 class="font-serif text-2xl text-amber-600 text-left">Awal Bertemu</h3>
+          <p class="mt-2 text-sm md:text-base font-light text-left">
+            Kami pertama kali bertemu di sebuah acara kampus. 
+            Awalnya hanya sebatas teman, tapi ada sesuatu yang membuat kami terus terhubung.
+          </p>
+        </div>
+
+        <!-- Menjalin Hubungan -->
+        <div class="animate-on-scroll">
+          <img src="img/our moment  (3).JPEG" alt="Menjalin Hubungan" class="w-full rounded-xl mb-4 shadow-md">
+          <h3 class="font-serif text-2xl text-amber-600 text-left">Menjalin Hubungan</h3>
+          <p class="mt-2 text-sm md:text-base font-light text-left">
+            Setelah beberapa bulan saling mengenal, kami memutuskan untuk bersama. 
+            Dari kopi sore, jalan-jalan singkat, hingga melewati suka dan duka bersama.
+          </p>
+        </div>
+
+        <!-- Berkomitmen -->
+        <div class="animate-on-scroll">
+          <img src="img/our moment  (2).JPEG" alt="Berkomitmen" class="w-full rounded-xl mb-4 shadow-md">
+          <h3 class="font-serif text-2xl text-amber-600 text-left">Berkomitmen</h3>
+          <p class="mt-2 text-sm md:text-base font-light text-left">
+            Hubungan kami makin dewasa. Kami mulai saling terbuka membicarakan masa depan, 
+            membangun mimpi, dan saling mendukung di setiap langkah.
+          </p>
+        </div>
+
+        <!-- Menikah -->
+        <div class="animate-on-scroll">
+          <img src="img/our moment  (1).JPEG" alt="Menikah" class="w-full rounded-xl mb-4 shadow-md">
+          <h3 class="font-serif text-2xl text-amber-600 text-left">Menikah</h3>
+          <p class="mt-2 text-sm md:text-base font-light text-left">
+            Kini kami siap memulai babak baru sebagai pasangan suami istri. 
+            Semoga cinta ini selalu tumbuh dan membawa berkah untuk kehidupan yang akan datang.
+          </p>
+        </div>
+
       </div>
-
-      <!-- Menjalin Hubungan -->
-      <div class="bg-cover border border-white/30 rounded-2xl p-6 shadow-lg"style="background-image: url('img/Desain tanpa judul (3) (1).png');"
-        data-aos="fade-up" data-aos-delay="700">
-        <img src="img/our moment  (3).JPEG" alt="Menjalin Hubungan" class="w-full rounded-xl mb-4 shadow-md">
-        <h3 class="font-serif text-2xl text-amber-300 text-left">Menjalin Hubungan</h3>
-        <p class="mt-2 text-sm md:text-base font-light text-black text-left">
-          Setelah beberapa bulan saling mengenal, kami memutuskan untuk bersama. 
-          Dari kopi sore, jalan-jalan singkat, hingga melewati suka dan duka bersama.
-        </p>
-      </div>
-
-      <!-- Berkomitmen -->
-      <div class="bg-cover border border-white/30 rounded-2xl p-6 shadow-lg" style="background-image: url('img/Desain tanpa judul (3) (1).png');"
-        data-aos="fade-up" data-aos-delay="1000">
-        <img src="img/our moment  (2).JPEG" alt="Berkomitmen" class="w-full rounded-xl mb-4 shadow-md">
-        <h3 class="font-serif text-2xl text-amber-300 text-left">Berkomitmen</h3>
-        <p class="mt-2 text-sm md:text-base font-light text-black text-left">
-          Hubungan kami makin dewasa. Kami mulai saling terbuka membicarakan masa depan, 
-          membangun mimpi, dan saling mendukung di setiap langkah.
-        </p>
-      </div>
-
-      <!-- Menikah -->
-      <div class="bg-cover border border-white/30 rounded-2xl p-6 shadow-lg"style="background-image: url('img/Desain tanpa judul (3) (1).png');"
-        data-aos="fade-up" data-aos-delay="1300">
-        <img src="img/our moment  (1).JPEG" alt="Menikah" class="w-full rounded-xl mb-4 shadow-md">
-        <h3 class="font-serif text-2xl text-amber-300 text-left">Menikah</h3>
-        <p class="mt-2 text-sm md:text-base text-black text-left">
-          Kini kami siap memulai babak baru sebagai pasangan suami istri. 
-          Semoga cinta ini selalu tumbuh dan membawa berkah untuk kehidupan yang akan datang.
-        </p>
-      </div>
-
     </div>
   </div>
 </section>
 
-
-        
-        <section id="rsvp-gift" 
-        class="relative min-h-screen flex items-center justify-center py-20 px-4 bg-black/70">
-        <div class="w-full max-w-2xl mx-auto">
-          <div class="bg-black/20 backdrop-blur-md rounded-none border border-white/20 p-6 md:p-8 text-white shadow-lg" >
-            <div class="text-center">
-              <h2 class="font-serif text-3xl mb-1 animate-on-scroll">Konfirmasi Kehadiran</h2>
-              <p class="text-sm font-light text-gray-200 mb-6 animate-on-scroll" 
-              style="--delay: 100ms;">Mohon konfirmasi kehadiran Anda untuk kelancaran acara kami.</p>
-              <form id="rsvp-form" class="flex flex-col gap-4 text-left">
-                <div class="animate-on-scroll" style="--delay: 200ms;">
-                  <label for="guest-name" class="text-sm mb-1 block">Nama</label>
-                  <input type="text" id="guest-name" class="w-full rounded-md p-2 form-input transition-all" placeholder="Tulis nama Anda..." required></div>
-                  <div class="animate-on-scroll" 
-                  style="--delay: 300ms;">
-                  <label for="guest-status" 
-                  class="text-sm mb-1 block">Konfirmasi</label>
-                  <select id="guest-status" class="w-full rounded-md p-2 form-input transition-all" required>
-                    <option value="" disabled selected>Pilih Opsi</option>
-                    <option value="Hadir">Hadir</option>
-                    <option value="Tidak Dapat Hadir">Tidak Dapat Hadir</option>
-                  </select></div><div id="guest-count-wrapper" class="hidden animate-on-scroll" style="--delay: 400ms;">
-                  <label for="guest-count" class="text-sm mb-1 block">Jumlah Tamu (termasuk Anda)</label>
-                  <select id="guest-count" class="w-full rounded-md p-2 form-input transition-all">
-                    <option value="1">1 Orang</option>
-                    <option value="2">2 Orang</option>
-                  </select></div><div class="animate-on-scroll" style="--delay: 500ms;">
-                    <label for="guest-message" class="text-sm mb-1 block">Ucapan & Doa</label>
-                    <textarea id="guest-message" rows="3" class="w-full rounded-md p-2 form-input transition-all" placeholder="Tulis ucapan dan doa Anda untuk kami..."></textarea>
-                  </div>
-                  <button type="submit" 
-                  class="mt-4 bg-white/20 border border-white/30 rounded-full py-2 px-6 hover:bg-white/30 transition-colors w-full animate-on-scroll" 
-                  style="--delay: 600ms;">Kirim Konfirmasi via WhatsApp</button>
-                </form>
-              </div>
-              <div class="w-2/3 h-px bg-white/20 mx-auto my-10 animate-on-scroll" 
-              style="--delay: 700ms;"></div>
-              <div class="text-center">
-                <h2 class="font-serif text-3xl mb-1 animate-on-scroll" 
-                style="--delay: 800ms;">Wedding Gift</h2>
-                <p class="text-sm font-light text-gray-200 mb-6 animate-on-scroll" 
-                style="--delay: 900ms;">Doa restu Anda adalah hadiah terindah. Namun, jika Anda ingin memberikan tanda kasih, kami telah menyediakan opsi di bawah ini untuk memudahkan Anda.</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
-                  <div class="bg-white/10 p-4 rounded-lg animate-on-scroll" 
-                  style="--delay: 1000ms;">
-                  <img src="img/bca.png" alt="BCA" class="h-6 mb-2">
-                  <p id="bank-1-number" class="font-bold text-lg">123 456 7890</p>
-                  <p class="text-sm">a.n. Putri Permata Sari</p>
-                  <button data-clipboard-target="#bank-1-number" 
-                  class="copy-button mt-2 text-xs bg-white/20 px-3 py-1 rounded-full hover:bg-white/30 transition-colors">Salin Rekening</button>
-                </div>
-                <div class="bg-white/10 p-4 rounded-lg animate-on-scroll" 
-                style="--delay: 1100ms;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Bank_Mandiri_logo_2016.svg" alt="Mandiri" class="h-5 mb-2">
-                <p id="bank-2-number" class="font-bold text-lg">098 765 4321</p>
-                <p class="text-sm">a.n. Putra Agung Wijaya</p>
-                <button data-clipboard-target="#bank-2-number" class="copy-button mt-2 text-xs bg-white/20 px-3 py-1 rounded-full hover:bg-white/30 transition-colors">Salin Rekening</button>
-              </div>
-            </div>
-            <div class="mt-6 text-left bg-white/10 p-4 rounded-lg animate-on-scroll" style="--delay: 1200ms;"><h4 class="font-bold">Kirim Kado Fisik</h4><p id="address" class="text-sm mt-1">Penerima: Putra & Putri<br>Jl. Kenangan Indah No. 123, Kel. Suka Maju, Kec. Bahagia, Kota Sejahtera, 12345</p><div class="flex items-center gap-2 mt-2"><button data-clipboard-target="#address" class="copy-button text-xs bg-white/20 px-3 py-1 rounded-full hover:bg-white/30 transition-colors">Salin Alamat</button><a href="https://maps.app.goo.gl/83Jq7nk83iTNihaB7" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs bg-white/20 px-3 py-1 rounded-full hover:bg-white/30 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/></svg>Buka Lokasi</a></div></div></div></div></div></section>
-        
-        <section id="gallery" class="bg-gradient-to-t from-transparent to-black/65 relative text-white py-20 px-4 bg-black/20">
+ <section id="gallery" class=" relative text-white py-20 px-4 bg-[#FAF0E6] overflow-x-hidden">
             <div class="w-full max-w-5xl mx-auto text-center">
-                <h2 class="font-serif text-4xl md:text-5xl text-shadow mb-2 animate-on-scroll">Our Moments</h2>
-                <p class="text-gray-200 text-sm md:text-base mb-8 animate-on-scroll" style="--delay: 200ms;">Beberapa potret kebahagiaan yang ingin kami bagikan.</p>
+                <h2 class="font-serif text-4xl md:text-5xl text-shadow text-black mb-2 animate-on-scroll">Our Moments</h2>
+                <p class="text-black text-sm md:text-base mb-8 animate-on-scroll" style="--delay: 200ms;">Beberapa potret kebahagiaan yang ingin kami bagikan.</p>
                 <div id="my-gallery" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
-                    <a href="img/gallery  (1).JPEG" data-pswp-width="1280" data-pswp-height="1920" target="_blank" data-aos="zoom-in-up" data-aos-delay="500">
+                    <a href="img/gallery  (1).JPEG" data-pswp-width="1280" data-pswp-height="1920" target="_blank" data-aos="fade-down-right" data-aos-delay="500">
                         <img src="img/gallery  (1).JPEG" alt="Foto 1" class="w-full h-full object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"></a>
-                    <a href="img/gallery  (2).JPEG" data-pswp-width="1280" data-pswp-height="1920" target="_blank" data-aos="zoom-in-down" data-aos-delay="500">
+                    <a href="img/gallery  (2).JPEG" data-pswp-width="1280" data-pswp-height="1920" target="_blank" data-aos="fade-up-left" data-aos-delay="500">
                         <img src="img/gallery  (2).JPEG" alt="Foto 2" class="w-full h-full object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"></a>
-                    <a href="img/gallery  (3).JPEG" data-pswp-width="1280" data-pswp-height="1920" target="_blank" data-aos="zoom-in-up" data-aos-delay="500">
+                    <a href="img/gallery  (3).JPEG" data-pswp-width="1280" data-pswp-height="1920" target="_blank" data-aos="fade-right" data-aos-delay="500">
                         <img src="img/gallery  (3).JPEG" alt="Foto 3" class="w-full h-full object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"></a>
-                    <a href="img/gallery  (7).JPEG" data-pswp-width="1280" data-pswp-height="1920" target="_blank" data-aos="zoom-in-down" data-aos-delay="500">
+                    <a href="img/gallery  (7).JPEG" data-pswp-width="1280" data-pswp-height="1920" target="_blank" data-aos="fade-left" data-aos-delay="500">
                         <img src="img/gallery  (7).JPEG" alt="Foto 4" class="w-full h-full object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"></a>
-                    <a href="img/gallery  (8).JPEG" data-pswp-width="1280" data-pswp-height="1920" target="_blank" data-aos="zoom-in-up" data-aos-delay="500">
+                    <a href="img/gallery  (8).JPEG" data-pswp-width="1280" data-pswp-height="1920" target="_blank" data-aos="fade-up" data-aos-delay="500">
                         <img src="img/gallery  (8).JPEG" alt="Foto 5" class="w-full h-full object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"></a>
-                    <a href="img/gallery  (6).JPEG" data-pswp-width="1920" data-pswp-height="1280" target="_blank" data-aos="zoom-in-down" data-aos-delay="500">
+                    <a href="img/gallery  (6).JPEG" data-pswp-width="1920" data-pswp-height="1280" target="_blank" data-aos="fade-down" data-aos-delay="500">
                         <img src="img/gallery  (6).JPEG" alt="Foto 6" class="w-full h-full object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"></a>
-                    <a href="img/gallery  (1).JPEG" data-pswp-width="1280" data-pswp-height="1920" target="_blank" data-aos="zoom-in-up" data-aos-delay="500">
+                    <a href="img/gallery  (1).JPEG" data-pswp-width="1280" data-pswp-height="1920" target="_blank" data-aos="faderight" data-aos-delay="500">
                         <img src="img/gallery  (1).JPEG" alt="Foto 7" class="w-full h-full object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"></a>
-                    <a href="img/gallery  (2).JPEG" data-pswp-width="1280" data-pswp-height="1920" target="_blank" data-aos="zoom-in-down" data-aos-delay="500">
+                    <a href="img/gallery  (2).JPEG" data-pswp-width="1280" data-pswp-height="1920" target="_blank" data-aos="fade-left" data-aos-delay="500">
                         <img src="img/gallery  (2).JPEG" alt="Foto 8" class="w-full h-full object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"></a>
-                    <a href="img/gallery  (3).JPEG" data-pswp-width="1920" data-pswp-height="1280" target="_blank" data-aos="zoom-in-up" data-aos-delay="500">
+                    <a href="img/gallery  (3).JPEG" data-pswp-width="1920" data-pswp-height="1280" target="_blank" data-aos="fade-down-right" data-aos-delay="500">
                         <img src="img/gallery  (3).JPEG" alt="Foto 9" class="w-full h-full object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"></a>
-                    <a href="img/gallery  (7).JPEG" data-pswp-width="1280" data-pswp-height="1920" target="_blank" data-aos="zoom-in-down" data-aos-delay="500">
+                    <a href="img/gallery  (7).JPEG" data-pswp-width="1280" data-pswp-height="1920" target="_blank" data-aos="fade-up-left" data-aos-delay="500">
                         <img src="img/gallery  (7).JPEG" alt="Foto 10" class="w-full h-full object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"></a></div></div></section>
         
-        <section id="thank-you" class="relative flex flex-col items-center justify-center text-white text-center py-20 px-4 min-h-screen bg-black/20">
-            <div class="animate-on-scroll">
-                <h2 class="font-serif text-4xl md:text-5xl tracking-wide mb-4">Terima Kasih</h2>
-                <p class="font-light text-gray-200 text-sm md:text-base max-w-xl mx-auto">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kami.</p>
-                <p class="mt-4 font-light text-gray-200 text-sm md:text-base">Atas kehadiran dan doa restu yang telah diberikan, kami ucapkan terima kasih.</p>
-                <p class="mt-12 font-light text-gray-200 text-sm">Hormat kami yang berbahagia,</p>
-                <h3 class="font-cursive text-5xl mt-2">Putra & Putri</h3>
-            </div>
+        
+       <section id="rsvp-gift"  
+  class="relative min-h-screen flex items-center justify-center rounded-b-[1rem] py-20 px-4 bg-[#FAF0E6]">
+  <div class="w-full max-w-2xl mx-auto">
+    <!-- FRAME UTAMA -->
+    <div class="bg-white/70 backdrop-blur-md rounded-[3rem] shadow-[0_10px_25px_rgba(0,0,0,0.3)] border border-white/40 p-6 md:p-8 text-black">
+      
+      <!-- KONTEN DALAM FRAME -->
+      <div class="text-center">
+        <h2 class="font-serif text-3xl mb-1 animate-on-scroll">Reservasi</h2>
+        <p class="text-sm font-light mb-6 animate-on-scroll" style="--delay: 100ms;">
+          Mohon konfirmasi kehadiran Anda untuk kelancaran acara kami.
+        </p>
+
+        <form id="rsvp-form" class="flex flex-col gap-4 text-left">
+          <div class="animate-on-scroll" style="--delay: 200ms;">
+            <label for="guest-name" class="text-sm mb-1 block">Nama</label>
+            <input type="text" id="guest-name" 
+              class="w-full rounded-md p-2 border border-black/10 focus:ring focus:ring-black/20 transition-all" 
+              placeholder="Tulis nama Anda..." required>
+          </div>
+
+          <div class="animate-on-scroll" style="--delay: 300ms;">
+            <label for="guest-status" class="text-sm mb-1 block">Konfirmasi</label>
+            <select id="guest-status" 
+              class="w-full rounded-md p-2 border border-black/10 focus:ring focus:ring-black/20 transition-all" required>
+              <option value="" disabled selected>Pilih Opsi</option>
+              <option value="Hadir">Hadir</option>
+              <option value="Tidak Dapat Hadir">Tidak Dapat Hadir</option>
+            </select>
+          </div>
+
+          <div id="guest-count-wrapper" class="hidden animate-on-scroll" style="--delay: 400ms;">
+            <label for="guest-count" class="text-sm mb-1 block">Jumlah Tamu (termasuk Anda)</label>
+            <select id="guest-count" 
+              class="w-full rounded-md p-2 border border-black/10 focus:ring focus:ring-black/20 transition-all">
+              <option value="1">1 Orang</option>
+              <option value="2">2 Orang</option>
+            </select>
+          </div>
+
+          <div class="animate-on-scroll" style="--delay: 500ms;">
+            <label for="guest-message" class="text-sm mb-1 block">Ucapan & Doa</label>
+            <textarea id="guest-message" rows="3" 
+              class="w-full rounded-md p-2 border border-black/10 focus:ring focus:ring-black/20 transition-all" 
+              placeholder="Tulis ucapan dan doa Anda untuk kami..."></textarea>
+          </div>
+
+          <button type="submit" 
+            class="mt-4 bg-black/10 border border-black/20 rounded-full py-2 px-6 hover:bg-black/20 transition-colors w-full animate-on-scroll" 
+            style="--delay: 600ms;">Kirim Konfirmasi via WhatsApp</button>
+        </form>
+      </div>
+
+      <!-- PEMBATAS -->
+      <div class="w-2/3 h-px bg-black/20 mx-auto my-10 animate-on-scroll" style="--delay: 700ms;"></div>
+
+      <!-- BAGIAN GIFT -->
+      <div class="text-center">
+        <h2 class="font-serif text-3xl mb-1 animate-on-scroll" style="--delay: 800ms;">Wedding Gift</h2>
+        <p class="text-sm font-light mb-6 animate-on-scroll" style="--delay: 900ms;">
+          Doa restu Anda adalah hadiah terindah. Namun, jika Anda ingin memberikan tanda kasih, kami telah menyediakan opsi di bawah ini untuk memudahkan Anda.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+          <div class="bg-white/50 p-4 rounded-lg shadow animate-on-scroll" style="--delay: 1000ms;">
+            <img src="img/bca.png" alt="BCA" class="h-6 mb-2">
+            <p id="bank-1-number" class="font-bold text-lg">123 456 7890</p>
+            <p class="text-sm">a.n. Putri Permata Sari</p>
+            <button data-clipboard-target="#bank-1-number" 
+              class="copy-button mt-2 text-xs bg-black/10 px-3 py-1 rounded-full hover:bg-black/20 transition-colors">
+              Salin Rekening
+            </button>
+          </div>
+
+          <div class="bg-white/50 p-4 rounded-lg shadow animate-on-scroll" style="--delay: 1100ms;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Bank_Mandiri_logo_2016.svg" alt="Mandiri" class="h-5 mb-2">
+            <p id="bank-2-number" class="font-bold text-lg">098 765 4321</p>
+            <p class="text-sm">a.n. Putra Agung Wijaya</p>
+            <button data-clipboard-target="#bank-2-number" 
+              class="copy-button mt-2 text-xs bg-black/10 px-3 py-1 rounded-full hover:bg-black/20 transition-colors">
+              Salin Rekening
+            </button>
+          </div>
+        </div>
+
+        <div class="mt-6 text-left bg-white/50 p-4 rounded-lg shadow animate-on-scroll" style="--delay: 1200ms;">
+          <h4 class="font-bold">Kirim Kado Fisik</h4>
+          <p id="address" class="text-sm mt-1">
+            Penerima: Putra & Putri<br>Jl. Kenangan Indah No. 123, Kel. Suka Maju, Kec. Bahagia, Kota Sejahtera, 12345
+          </p>
+          <div class="flex items-center gap-2 mt-2">
+            <button data-clipboard-target="#address" 
+              class="copy-button text-xs bg-black/10 px-3 py-1 rounded-full hover:bg-black/20 transition-colors">
+              Salin Alamat
+            </button>
+            <a href="https://maps.app.goo.gl/83Jq7nk83iTNihaB7" target="_blank" rel="noopener noreferrer" 
+              class="inline-flex items-center gap-1 text-xs bg-black/10 px-3 py-1 rounded-full hover:bg-black/20 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+              </svg>
+              Buka Lokasi
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+       
+<section id="thank-you" class="relative flex flex-col items-center justify-center text-white text-center py-20 px-4 min-h-screen bg-black/60">
+
+  <div class="animate-on-scroll">
+    <h2 class="font-serif text-5xl md:text-6xl tracking-wide mb-4">Thank You</h2>
+     <div class="flex items-center justify-center my-6">
+  <!-- Garis kiri -->
+  <div class="flex-1 h-[1px] bg-white/60 mx-4"></div>
+
+  <!-- Ikon Love putih -->
+  <div class="text-white text-2xl animate-pulse">❤</div>
+
+  <!-- Garis kanan -->
+  <div class="flex-1 h-[1px] bg-white/60 mx-4"></div>
+</div>
+    <h3 class="font-italianno text-5xl md:text-6xl mt-2">Irawan & Aida</h3>
+  </div>
+  
+    
             
             <footer class="absolute bottom-0 left-0 right-0 p-8 text-center animate-on-scroll" style="--delay: 200ms;">
                 <p class="text-xs font-light text-gray-300">Powered by:</p>
@@ -460,12 +590,37 @@
                 </div>
             </footer>
         </section>
+        <!-- Tombol Fullscreen -->
+<button id="fullscreen-btn" 
+  class="fixed bottom-20 right-5 z-[9999] bg-black/30 text-white backdrop-blur-md 
+         w-10 h-10 rounded-full flex items-center justify-center shadow-lg 
+         hover:bg-black/50 transition">
+  <!-- Icon fullscreen -->
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+       class="bi bi-arrows-fullscreen" viewBox="0 0 16 16">
+    <path fill-rule="evenodd"
+          d="M1 1a1 1 0 0 1 1-1h4a.5.5 0 0 1 0 1H2v4a.5.5 0 0 1-1 0V1Zm14 0a1 1 0 0 1 1 1v4a.5.5 0 0 1-1 0V2h-4a.5.5 0 0 1 0-1h4ZM1 15a1 1 0 0 1-1-1v-4a.5.5 0 0 1 1 0v4h4a.5.5 0 0 1 0 1H1Zm14 0a1 1 0 0 1-1 1h-4a.5.5 0 0 1 0-1h4v-4a.5.5 0 0 1 1 0v4Z"/>
+  </svg>
+</button>
     </main>
 
     <script src="https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.esm.js" type="module"></script>
     <script src="https://unpkg.com/photoswipe@5/dist/photoswipe.esm.js" type="module"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+  const fullscreenBtn = document.getElementById('fullscreen-btn');
+
+  fullscreenBtn.addEventListener('click', () => {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen().catch(err => {
+        alert(`Gagal masuk fullscreen: ${err.message}`);
+      });
+    } else {
+      document.exitFullscreen();
+    }
+  });
+</script>
     <script>
 document.addEventListener('DOMContentLoaded', function () {
   // Ambil nama dari ?to=
